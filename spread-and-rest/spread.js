@@ -20,10 +20,10 @@ const array2 = [3, 4];
 const arraySum = [...array1, ...array2];
 showVariable(arraySum);
 
-const unknownObj = {
+const textInput = "";
+const optionalObjProperty = {
     name: "dulee",
     age: 31,
-}
-const optionalObjProperty = {
-    
-}
+    ...(textInput && textInput !== "" && { textInput })
+};
+showVariable({optionalObjProperty})
