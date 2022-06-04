@@ -7,7 +7,7 @@ const dulee = {
     user_nickname: "dulee",
 }
 
-const { user_nickname: userNickName } = dulee;
+const { user_nickname: userNickName = 20 } = dulee;
 console.log(userNickName);
 
 let age = 0;
